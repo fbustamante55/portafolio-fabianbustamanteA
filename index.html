@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fabián Bustamante Aragón | Cybersecurity Portfolio</title>
+<meta name="description" content="Portafolio de Fabián Bustamante Aragón: estudiante de ciberseguridad, jugador de CTF y entusiasta de Red Team. SEC1 Certified. San José, Costa Rica.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M6 10l8 6-8 6M16 23h10' stroke='%2300ff41' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="boot" aria-live="polite">
+  <pre id="boot-text"></pre>
+</div>
+
+<a class="skip" href="#about">Saltar al contenido</a>
+
+<header class="nav">
+  <a href="#hero" class="logo">&gt;_ FB</a>
+  <button class="burger" aria-label="Menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#certs">Certs</a>
+    <a href="#experience">Experiencia</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#education">Educación</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<main>
+<section id="hero" class="hero">
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="prompt">root@kali:~# whoami</p>
+    <h1 class="glitch" data-text="Fabián Bustamante Aragón">Fabián Bustamante Aragón</h1>
+    <p class="typing"><span id="typed"></span><span class="cursor">_</span></p>
+    <p class="tagline">Cybersecurity Student · CTF Player · Red Team Enthusiast · <strong>SEC1 Certified</strong></p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#contact">Contáctame</a>
+      <a class="btn" href="CV_Fabian_Bustamante.pdf" target="_blank" rel="noopener">Ver CV (PDF)</a>
+      <a class="btn" href="#certs">Certificaciones</a>
+    </div>
+    <p class="loc"><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg> San José, Costa Rica</p>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2 class="title"><span>01</span> About</h2>
+  <div class="grid-2">
+    <div class="card term">
+      <div class="term-bar"><i></i><i></i><i></i><span>about.txt</span></div>
+      <p>Aspiring offensive security professional con experiencia práctica en pentesting y defensa de redes.</p>
+      <p>Hago CTF a diario en <strong>OverTheWire</strong> y <strong>TryHackMe</strong> usando Kali Linux: Nmap, Wireshark, Metasploit, Gobuster y Hashcat.</p>
+      <p class="seek">$ seeking --roles</p>
+      <ul class="tags">
+        <li>Junior Pentester</li><li>SOC Analyst</li><li>Bug Bounty</li>
+      </ul>
+      <p class="muted">Costa Rica o remoto.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="32">0</b><span>cámaras IP desplegadas</span></div>
+      <div class="stat"><b data-count="99.2" data-dec="1">0</b><span>% uptime del sistema CCTV</span></div>
+      <div class="stat"><b data-count="3.9" data-dec="1">0</b><span>GPA / 4.0</span></div>
+      <div class="stat"><b data-count="17">0</b><span>certificaciones y cursos</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2 class="title"><span>02</span> Skills</h2>
+  <div class="grid-2">
+    <div class="card">
+      <h3>Ofensiva</h3>
+      <div class="bar"><label>Nmap</label><div><i data-w="80"></i></div></div>
+      <div class="bar"><label>Metasploit</label><div><i data-w="65"></i></div></div>
+      <div class="bar"><label>Wireshark</label><div><i data-w="75"></i></div></div>
+      <div class="bar"><label>Gobuster</label><div><i data-w="75"></i></div></div>
+      <div class="bar"><label>Hashcat</label><div><i data-w="65"></i></div></div>
+      <div class="bar"><label>Burp Suite</label><div><i data-w="50"></i></div></div>
+    </div>
+    <div class="card">
+      <h3>Redes · Sistemas · Dev</h3>
+      <div class="bar"><label>Redes (CCNA, VLANs)</label><div><i data-w="80"></i></div></div>
+      <div class="bar"><label>Kali Linux / WSL</label><div><i data-w="80"></i></div></div>
+      <div class="bar"><label>Windows Admin</label><div><i data-w="70"></i></div></div>
+      <div class="bar"><label>MySQL / SQL Server</label><div><i data-w="60"></i></div></div>
+      <div class="bar"><label>Power BI</label><div><i data-w="55"></i></div></div>
+      <p class="muted small">Barras = nivel autoevaluado de comodidad práctica.</p>
+      <h3 class="mt">Plataformas CTF</h3>
+      <ul class="tags"><li>TryHackMe</li><li>OverTheWire</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="certs" class="section">
+  <h2 class="title"><span>03</span> Certificaciones</h2>
+  <p class="muted">Insignias verificables en <a href="https://www.credly.com/users/fabianbustamante.36bc5c01" target="_blank" rel="noopener">Credly</a>.</p>
+  <div class="cert-grid">
+    <article class="card cert">
+      <h3>Ethical Hacker</h3><p class="muted">Cisco Networking Academy</p>
+      <div class="row"><a class="btn sm" href="certs/ethical-hacker.pdf" target="_blank" rel="noopener">Ver PDF</a><a class="btn sm" href="https://www.credly.com/users/fabianbustamante.36bc5c01" target="_blank" rel="noopener">Credly</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Cyber Security 101 (SEC1)</h3><p class="muted">TryHackMe · Oct 2026</p>
+      <div class="row"><a class="btn sm" href="certs/sec1-tryhackme.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+    <article class="card cert">
+      <h3>CCNA: Introduction to Networks</h3><p class="muted">Cisco · Fidélitas · Dic 2024</p>
+      <div class="row"><a class="btn sm" href="certs/ccna-intro-networks.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Palo Alto Networks Cybersecurity</h3><p class="muted">Coursera · Sep 2025</p>
+      <div class="row"><a class="btn sm" href="certs/palo-alto-cybersecurity.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Scrum Fundamentals Certified</h3><p class="muted">Ene 2025</p>
+      <div class="row"><a class="btn sm" href="certs/scrum-fundamentals.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Google Project Management</h3><p class="muted">Coursera · Mar 2026</p>
+      <div class="row"><a class="btn sm" href="certs/google-project-management.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+    <article class="card cert">
+      <h3>TryHackMe: Jr Penetration Tester</h3><p class="muted">Learning Path · Nov 2024</p>
+      <div class="row"><a class="btn sm" href="certs/thm-jr-pentester.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+    <article class="card cert">
+      <h3>TryHackMe: Pre Security</h3><p class="muted">Learning Path · Oct 2026</p>
+      <div class="row"><a class="btn sm" href="certs/thm-pre-security.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Intro a IoT y Transformación Digital</h3><p class="muted">Cisco · Fidélitas</p>
+      <div class="row"><a class="btn sm" href="certs/intro-iot-fidelitas.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+  </div>
+
+  <h3 class="sub">Desarrollo y datos</h3>
+  <div class="cert-grid">
+    <article class="card cert">
+      <h3>Back-End Engineer Path</h3><p class="muted">Codecademy · Node.js, Express, SQL, PostgreSQL, Web Security</p>
+      <div class="row"><a class="btn sm" href="certs/codecademy-backend.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Visualización de datos con Power BI</h3><p class="muted">Fidélitas · 24 horas · Mar 2024</p>
+    </article>
+  </div>
+
+  <h3 class="sub">IA · Anthropic</h3>
+  <div class="cert-grid">
+    <article class="card cert">
+      <h3>AI Fluency: Framework &amp; Foundations</h3><p class="muted">Anthropic</p>
+      <div class="row"><a class="btn sm" href="certs/ai-fluency.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Claude Code in Action</h3><p class="muted">Anthropic · Abr 2026</p>
+      <div class="row"><a class="btn sm" href="certs/claude-code-in-action.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Claude Code 101</h3><p class="muted">Anthropic</p>
+      <div class="row"><a class="btn sm" href="certs/claude-code-101.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Claude 101</h3><p class="muted">Anthropic</p>
+      <div class="row"><a class="btn sm" href="certs/claude-101.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Claude Platform 101</h3><p class="muted">Anthropic</p>
+      <div class="row"><a class="btn sm" href="certs/claude-platform-101.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+    </article>
+    <article class="card cert">
+      <h3>Introduction to Claude Cowork</h3><p class="muted">Anthropic</p>
+      <div class="row"><a class="btn sm" href="certs/claude-cowork.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2 class="title"><span>04</span> Experiencia</h2>
+  <div class="timeline">
+    <article class="card tl">
+      <p class="date">Jun – Nov 2026 · 6 meses</p>
+      <h3>Technical Systems Developer</h3>
+      <p class="muted">Hernández y Martins S.A.</p>
+      <ul>
+        <li>CCTV en 2 sitios (supermercado + ferretería): 32 cámaras IP, NVR, 99.2% uptime.</li>
+        <li>Segmentación VLAN, cableado Cat 6, IPs estáticas, acceso remoto web/móvil.</li>
+        <li>Enlace de antena inalámbrica entre bodegas y switch principal.</li>
+      </ul>
+    </article>
+    <article class="card tl">
+      <p class="date">May – Ago 2025 · 4 meses</p>
+      <h3>Customer Support Representative</h3>
+      <p class="muted">Foundever</p>
+      <ul>
+        <li>Soporte técnico Tier 1 en inglés para clientes Verizon.</li>
+        <li>Troubleshooting de dispositivos y conectividad; escalación a Tier 2.</li>
+        <li>Gestión de tickets y activaciones de servicio.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2 class="title"><span>05</span> Proyectos</h2>
+  <div class="cert-grid">
+    <article class="card proj featured">
+      <span class="badge">Security · Go · v0.2.0-dev</span>
+      <h3>Nox</h3>
+      <p>Scanner de red en Go de dos etapas: primero encuentra hosts y puertos abiertos rápido, luego identifica qué corre en ellos. Salida en JSON Lines para pipelines, y cada scan se guarda en SQLite para compararlo con el anterior (<code>nox diff</code>).</p>
+      <ul class="feat">
+        <li>Descubrimiento de hosts, motor SYN sin estado (Linux, root) con cookies HMAC y adaptación de tasa según pérdida, y escáner TCP connect sin privilegios.</li>
+        <li><code>--deep</code>: identifica SSH, HTTP(S)/TLS, SMTP, FTP, MySQL, Redis, SMB, PostgreSQL, RDP, MongoDB y más. Probado contra OpenSSH, nginx, Apache, MariaDB, Redis y Samba reales.</li>
+        <li>Escaneo UDP, perfiles de timing <code>-T 0–5</code> y sistema de plugins (4 integrados de solo lectura, más los propios en cualquier lenguaje) con reglas en JSON.</li>
+        <li>Seguridad por diseño: plugins sin shell, entorno mínimo, límite de tiempo y de salida; banners filtrados a ASCII imprimible.</li>
+      </ul>
+      <ul class="tags"><li>Go</li><li>Raw sockets</li><li>SQLite</li><li>JSONL</li><li>Plugins</li></ul>
+      <p class="muted small">Proyecto independiente, en etapa temprana y probado en loopback y software local. Uso solo en sistemas autorizados.</p>
+    </article>
+    <article class="card proj">
+      <span class="badge">GitHub · Público</span>
+      <h3>thm-writeups</h3>
+      <p>Notas y writeups de TryHackMe (Cyber Security 101): metodología y comandos de John the Ripper, Hydra, Gobuster, EternalBlue y CVE-2024-21413, más cheatsheet de recon, cracking, shells y privesc. Flags omitidas.</p>
+      <ul class="tags"><li>TryHackMe</li><li>Writeups</li><li>Metasploit</li></ul>
+      <div class="row"><a class="btn sm" href="https://github.com/fbustamante55/thm-writeups" target="_blank" rel="noopener">Ver repo</a></div>
+    </article>
+    <article class="card proj">
+      <span class="badge">GitHub · Público</span>
+      <h3>OverTheWire-Writeups</h3>
+      <p>Writeups de Natas (niveles 0–15, en progreso): LFI, command injection, SQLi, XOR con key estática y uploads con polyglots, con la vulnerabilidad, la explotación y la corrección.</p>
+      <ul class="tags"><li>OverTheWire</li><li>Web security</li><li>Burp Suite</li></ul>
+      <div class="row"><a class="btn sm" href="https://github.com/fbustamante55/OverTheWire-Writeups" target="_blank" rel="noopener">Ver repo</a></div>
+    </article>
+    <article class="card proj">
+      <span class="badge">Security</span>
+      <h3>Mr.Robot</h3>
+      <p>Pentest Copilot local para bug bounty, corriendo con Ollama + Docker.</p>
+      <ul class="tags"><li>Ollama</li><li>Docker</li><li>Bug bounty</li></ul>
+    </article>
+    <article class="card proj">
+      <span class="badge">Web</span>
+      <h3>TCU — Hogar de la Esperanza</h3>
+      <p>Sitio web para una ONG en Paso Ancho.</p>
+      <ul class="tags"><li>Web</li><li>ONG</li></ul>
+    </article>
+    <article class="card proj">
+      <span class="badge">Web</span>
+      <h3>El Bambú Punta Leona</h3>
+      <p>Rediseño web para Grupo MH.</p>
+      <ul class="tags"><li>Rediseño</li><li>Grupo MH</li></ul>
+    </article>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <h2 class="title"><span>06</span> Educación</h2>
+  <div class="grid-2">
+    <article class="card">
+      <p class="date">2024 – 2027</p>
+      <h3>Bachillerato en Ing. Sistemas de Computación</h3>
+      <p class="muted">Fidélitas · GPA 3.9/4.0</p>
+    </article>
+    <article class="card">
+      <p class="date">2020 – 2023</p>
+      <h3>High School</h3>
+      <p class="muted">Colegio Internacional SEK Costa Rica</p>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2 class="title"><span>07</span> Contacto</h2>
+  <div class="card term">
+    <div class="term-bar"><i></i><i></i><i></i><span>contact.sh</span></div>
+    <p>$ ./connect --target fabian</p>
+    <ul class="links">
+      <li><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:fabianbustamantemra@gmail.com">fabianbustamantemra@gmail.com</a></li>
+      <li><svg class="ic" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 4v-3.5a3 3 0 00-.8-2.3c2.800-.3 5.800-1.400 5.800-6.200a4.800 4.800 0 00-1.300-3.300 4.500 4.500 0 000-3.300s-1-.3-3.500 1.300a12 12 0 00-6.400 0C6.400 1.800 5.400 2.100 5.400 2.100a4.500 4.500 0 000 3.300A4.800 4.800 0 004 8.700c0 4.800 3 5.900 5.800 6.200a3 3 0 00-.8 2.300V21"/></svg><a href="https://github.com/fbustamante55" target="_blank" rel="noopener">github.com/fbustamante55</a></li>
+      <li><svg class="ic" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg><a href="https://www.linkedin.com/in/fabián-bustamante-aragón-6796142b0/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.500 14L7 22l5-3 5 3-1.500-8"/></svg><a href="https://www.credly.com/users/fabianbustamante.36bc5c01" target="_blank" rel="noopener">Credly</a></li>
+    </ul>
+    <a class="btn btn-primary" href="mailto:fabianbustamantemra@gmail.com">Enviar correo</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">© 2026 Fabián Bustamante Aragón · San José, Costa Rica · <span class="g">[ SYSTEM ONLINE ]</span></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
