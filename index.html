@@ -1,17 +1,18 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fabián Bustamante Aragón | Cybersecurity Portfolio</title>
-<meta name="description" content="Portafolio de Fabián Bustamante Aragón: estudiante de ciberseguridad, jugador de CTF y entusiasta de Red Team. SEC1 Certified. San José, Costa Rica.">
+<meta name="description" content="Portfolio of Fabián Bustamante Aragón: cybersecurity student, CTF player and Red Team enthusiast. SEC1 Certified. San José, Costa Rica." data-i18n-attrs="content:meta.desc">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fabián Bustamante Aragón | Cybersecurity Portfolio">
-<meta property="og:description" content="Cybersecurity Student · CTF Player · Red Team Enthusiast · SEC1 Certified. Writeups, herramientas y certificaciones.">
-<meta property="og:locale" content="es_CR">
+<meta property="og:description" content="Cybersecurity Student · CTF Player · Red Team Enthusiast · SEC1 Certified. Writeups, tools and certifications.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_CR">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#0a0a0a">
-<link rel="icon"href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M6 10l8 6-8 6M16 23h10' stroke='%2300ff41' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M6 10l8 6-8 6M16 23h10' stroke='%2300ff41' stroke-width='3' fill='none'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -23,21 +24,22 @@
   <pre id="boot-text"></pre>
 </div>
 
-<a class="skip" href="#about">Saltar al contenido</a>
+<a class="skip" href="#about" data-i18n="skip">Skip to content</a>
 
 <header class="nav">
   <a href="#hero" class="logo">&gt;_ FB</a>
-  <button class="burger" aria-label="Menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <button class="burger" aria-label="Menu" data-i18n-attrs="aria-label:menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   <nav id="menu">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#certs">Certs</a>
-    <a href="#experience">Experiencia</a>
-    <a href="#projects">Proyectos</a>
-    <a href="#education">Educación</a>
+    <a href="#experience" data-i18n="nav.exp">Experience</a>
+    <a href="#projects" data-i18n="nav.proj">Projects</a>
+    <a href="#education" data-i18n="nav.edu">Education</a>
     <a href="#cv">CV</a>
-    <a href="#contact">Contacto</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
   </nav>
+  <button class="btn sm lang" id="lang" type="button" lang="es">Español</button>
 </header>
 
 <main>
@@ -49,9 +51,9 @@
     <p class="typing"><span id="typed"></span><span class="cursor">_</span></p>
     <p class="tagline">Cybersecurity Student · CTF Player · Red Team Enthusiast · <strong>SEC1 Certified</strong></p>
     <div class="cta">
-      <a class="btn btn-primary" href="#contact">Contáctame</a>
-      <a class="btn" href="#cv">Ver CV (ES / EN)</a>
-      <a class="btn" href="#certs">Certificaciones</a>
+      <a class="btn btn-primary" href="#contact" data-i18n="hero.contact">Contact me</a>
+      <a class="btn" href="#cv" data-i18n="hero.cv">View CV (ES / EN)</a>
+      <a class="btn" href="#certs" data-i18n="hero.certs">Certifications</a>
     </div>
     <p class="loc"><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg> San José, Costa Rica</p>
   </div>
@@ -62,19 +64,19 @@
   <div class="grid-2">
     <div class="card term">
       <div class="term-bar"><i></i><i></i><i></i><span>about.txt</span></div>
-      <p>Aspiring offensive security professional con experiencia práctica en pentesting y defensa de redes.</p>
-      <p>Hago CTF a diario en <strong>OverTheWire</strong> y <strong>TryHackMe</strong> usando Kali Linux: Nmap, Wireshark, Metasploit, Gobuster y Hashcat.</p>
+      <p data-i18n="about.p1">Aspiring offensive security professional with hands-on experience in pentesting and network defense.</p>
+      <p data-i18n="about.p2">I do CTFs daily on <strong>OverTheWire</strong> and <strong>TryHackMe</strong> using Kali Linux: Nmap, Wireshark, Metasploit, Gobuster and Hashcat.</p>
       <p class="seek">$ seeking --roles</p>
       <ul class="tags">
         <li>Junior Pentester</li><li>SOC Analyst</li><li>Bug Bounty</li>
       </ul>
-      <p class="muted">Costa Rica o remoto.</p>
+      <p class="muted" data-i18n="about.loc">Costa Rica or remote.</p>
     </div>
     <div class="stats">
-      <div class="stat"><b data-count="32">0</b><span>cámaras IP desplegadas</span></div>
-      <div class="stat"><b data-count="99.2" data-dec="1">0</b><span>% uptime del sistema CCTV</span></div>
-      <div class="stat"><b data-count="3.9" data-dec="1">0</b><span>GPA / 4.0</span></div>
-      <div class="stat"><b data-count="17">0</b><span>certificaciones y cursos</span></div>
+      <div class="stat"><b data-count="32">32</b><span data-i18n="stat.cams">IP cameras deployed</span></div>
+      <div class="stat"><b data-count="99.2" data-dec="1">99.2</b><span data-i18n="stat.uptime">% CCTV system uptime</span></div>
+      <div class="stat"><b data-count="3.9" data-dec="1">3.9</b><span>GPA / 4.0</span></div>
+      <div class="stat"><b data-count="17">17</b><span data-i18n="stat.certs">certifications and courses</span></div>
     </div>
   </div>
 </section>
@@ -83,194 +85,194 @@
   <h2 class="title"><span>02</span> Skills</h2>
   <div class="grid-2">
     <div class="card">
-      <h3>Ofensiva</h3>
-      <div class="bar"><label>Nmap</label><div><i data-w="80"></i></div></div>
-      <div class="bar"><label>Metasploit</label><div><i data-w="65"></i></div></div>
-      <div class="bar"><label>Wireshark</label><div><i data-w="75"></i></div></div>
-      <div class="bar"><label>Gobuster</label><div><i data-w="75"></i></div></div>
-      <div class="bar"><label>Hashcat</label><div><i data-w="65"></i></div></div>
-      <div class="bar"><label>Burp Suite</label><div><i data-w="50"></i></div></div>
+      <h3 data-i18n="skills.off">Offensive</h3>
+      <div class="bar"><label>Nmap</label><div><i data-w="80" style="--w:80%"></i></div></div>
+      <div class="bar"><label>Metasploit</label><div><i data-w="65" style="--w:65%"></i></div></div>
+      <div class="bar"><label>Wireshark</label><div><i data-w="75" style="--w:75%"></i></div></div>
+      <div class="bar"><label>Gobuster</label><div><i data-w="75" style="--w:75%"></i></div></div>
+      <div class="bar"><label>Hashcat</label><div><i data-w="65" style="--w:65%"></i></div></div>
+      <div class="bar"><label>Burp Suite</label><div><i data-w="50" style="--w:50%"></i></div></div>
     </div>
     <div class="card">
-      <h3>Redes · Sistemas · Dev</h3>
-      <div class="bar"><label>Redes (CCNA, VLANs)</label><div><i data-w="80"></i></div></div>
-      <div class="bar"><label>Kali Linux / WSL</label><div><i data-w="80"></i></div></div>
-      <div class="bar"><label>Windows Admin</label><div><i data-w="70"></i></div></div>
-      <div class="bar"><label>MySQL / SQL Server</label><div><i data-w="60"></i></div></div>
-      <div class="bar"><label>Power BI</label><div><i data-w="55"></i></div></div>
-      <p class="muted small">Barras = nivel autoevaluado de comodidad práctica.</p>
-      <h3 class="mt">Plataformas CTF</h3>
+      <h3 data-i18n="skills.net">Networks · Systems · Dev</h3>
+      <div class="bar"><label data-i18n="skills.netbar">Networking (CCNA, VLANs)</label><div><i data-w="80" style="--w:80%"></i></div></div>
+      <div class="bar"><label>Kali Linux / WSL</label><div><i data-w="80" style="--w:80%"></i></div></div>
+      <div class="bar"><label>Windows Admin</label><div><i data-w="70" style="--w:70%"></i></div></div>
+      <div class="bar"><label>MySQL / SQL Server</label><div><i data-w="60" style="--w:60%"></i></div></div>
+      <div class="bar"><label>Power BI</label><div><i data-w="55" style="--w:55%"></i></div></div>
+      <p class="muted small" data-i18n="skills.note">Bars = self-assessed level of hands-on comfort.</p>
+      <h3 class="mt" data-i18n="skills.ctf">CTF Platforms</h3>
       <ul class="tags"><li>TryHackMe</li><li>OverTheWire</li></ul>
     </div>
   </div>
 </section>
 
 <section id="certs" class="section">
-  <h2 class="title"><span>03</span> Certificaciones</h2>
-  <p class="muted">Insignias verificables en <a href="https://www.credly.com/users/fabianbustamante.36bc5c01" target="_blank" rel="noopener">Credly</a>.</p>
+  <h2 class="title" data-i18n="h.certs"><span>03</span> Certifications</h2>
+  <p class="muted" data-i18n="certs.intro">Verifiable badges on <a href="https://www.credly.com/users/fabianbustamante.36bc5c01" target="_blank" rel="noopener">Credly</a>.</p>
   <div class="cert-grid">
     <article class="card cert">
       <h3>Ethical Hacker</h3><p class="muted">Cisco Networking Academy</p>
-      <div class="row"><a class="btn sm" href="certs/ethical-hacker.pdf" target="_blank" rel="noopener">Ver PDF</a><a class="btn sm" href="https://www.credly.com/badges/80097f93-0c67-44f8-916c-38552a6b0b81/public_url" target="_blank" rel="noopener">Credly</a></div>
+      <div class="row"><a class="btn sm" href="certs/ethical-hacker.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a><a class="btn sm" href="https://www.credly.com/badges/80097f93-0c67-44f8-916c-38552a6b0b81/public_url" target="_blank" rel="noopener">Credly</a></div>
     </article>
     <article class="card cert">
       <h3>Cyber Security 101 (SEC1)</h3><p class="muted">TryHackMe · Oct 2026</p>
-      <div class="row"><a class="btn sm" href="certs/sec1-tryhackme.pdf" target="_blank" rel="noopener">Ver PDF</a><a class="btn sm" href="https://www.credly.com/badges/eb54a92f-962a-444e-a2ae-f1fc7fa7be06/public_url" target="_blank" rel="noopener">Credly</a></div>
+      <div class="row"><a class="btn sm" href="certs/sec1-tryhackme.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a><a class="btn sm" href="https://www.credly.com/badges/eb54a92f-962a-444e-a2ae-f1fc7fa7be06/public_url" target="_blank" rel="noopener">Credly</a></div>
     </article>
     <article class="card cert">
-      <h3>CCNA: Introduction to Networks</h3><p class="muted">Cisco · Fidélitas · Dic 2024</p>
-      <div class="row"><a class="btn sm" href="certs/ccna-intro-networks.pdf" target="_blank" rel="noopener">Ver PDF</a><a class="btn sm" href="https://www.credly.com/badges/112b4cc2-cd6f-4e42-860e-3ab49387282d/public_url" target="_blank" rel="noopener">Credly</a></div>
+      <h3>CCNA: Introduction to Networks</h3><p class="muted" data-i18n="cert.ccna">Cisco · Fidélitas · Dec 2024</p>
+      <div class="row"><a class="btn sm" href="certs/ccna-intro-networks.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a><a class="btn sm" href="https://www.credly.com/badges/112b4cc2-cd6f-4e42-860e-3ab49387282d/public_url" target="_blank" rel="noopener">Credly</a></div>
     </article>
     <article class="card cert">
       <h3>Palo Alto Networks Cybersecurity</h3><p class="muted">Coursera · Sep 2025</p>
-      <div class="row"><a class="btn sm" href="certs/palo-alto-cybersecurity.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+      <div class="row"><a class="btn sm" href="certs/palo-alto-cybersecurity.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a></div>
     </article>
     <article class="card cert">
-      <h3>Scrum Fundamentals Certified</h3><p class="muted">Ene 2025</p>
-      <div class="row"><a class="btn sm" href="certs/scrum-fundamentals.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+      <h3>Scrum Fundamentals Certified</h3><p class="muted" data-i18n="cert.scrum">Jan 2025</p>
+      <div class="row"><a class="btn sm" href="certs/scrum-fundamentals.jpg" target="_blank" rel="noopener" data-i18n="btn.img">View image</a></div>
     </article>
     <article class="card cert">
       <h3>Google Project Management</h3><p class="muted">Coursera · Mar 2026</p>
-      <div class="row"><a class="btn sm" href="certs/google-project-management.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+      <div class="row"><a class="btn sm" href="certs/google-project-management.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a></div>
     </article>
     <article class="card cert">
       <h3>TryHackMe: Jr Penetration Tester</h3><p class="muted">Learning Path · Nov 2024</p>
-      <div class="row"><a class="btn sm" href="certs/thm-jr-pentester.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+      <div class="row"><a class="btn sm" href="certs/thm-jr-pentester.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a></div>
     </article>
     <article class="card cert">
       <h3>TryHackMe: Pre Security</h3><p class="muted">Learning Path · Oct 2026</p>
-      <div class="row"><a class="btn sm" href="certs/thm-pre-security.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+      <div class="row"><a class="btn sm" href="certs/thm-pre-security.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a></div>
     </article>
     <article class="card cert">
-      <h3>Intro a IoT y Transformación Digital</h3><p class="muted">Cisco · Fidélitas</p>
-      <div class="row"><a class="btn sm" href="certs/intro-iot-fidelitas.pdf" target="_blank" rel="noopener">Ver PDF</a><a class="btn sm" href="https://www.credly.com/badges/37fcf6b4-cd4b-4a1f-a0d0-05a19605ef50/public_url" target="_blank" rel="noopener">Credly</a></div>
+      <h3 data-i18n="cert.iotname">Intro to IoT and Digital Transformation</h3><p class="muted">Cisco · Fidélitas</p>
+      <div class="row"><a class="btn sm" href="certs/intro-iot-fidelitas.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a><a class="btn sm" href="https://www.credly.com/badges/37fcf6b4-cd4b-4a1f-a0d0-05a19605ef50/public_url" target="_blank" rel="noopener">Credly</a></div>
     </article>
   </div>
 
-  <h3 class="sub">Desarrollo y datos</h3>
+  <h3 class="sub" data-i18n="certs.dev">Development and data</h3>
   <div class="cert-grid">
     <article class="card cert">
       <h3>Back-End Engineer Path</h3><p class="muted">Codecademy · Node.js, Express, SQL, PostgreSQL, Web Security</p>
-      <div class="row"><a class="btn sm" href="certs/codecademy-backend.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+      <div class="row"><a class="btn sm" href="certs/codecademy-backend.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a></div>
     </article>
     <article class="card cert">
-      <h3>Visualización de datos con Power BI</h3><p class="muted">Fidélitas · 24 horas · Mar 2024</p>
+      <h3 data-i18n="cert.pbiname">Data Visualization with Power BI</h3><p class="muted" data-i18n="cert.pbi">Fidélitas · 24 hours · Mar 2024</p>
     </article>
   </div>
 
-  <h3 class="sub">IA · Anthropic</h3>
+  <h3 class="sub" data-i18n="certs.ai">AI · Anthropic</h3>
   <div class="cert-grid">
     <article class="card cert">
       <h3>AI Fluency: Framework &amp; Foundations</h3><p class="muted">Anthropic</p>
-      <div class="row"><a class="btn sm" href="certs/ai-fluency.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+      <div class="row"><a class="btn sm" href="certs/ai-fluency.jpg" target="_blank" rel="noopener" data-i18n="btn.img">View image</a></div>
     </article>
     <article class="card cert">
-      <h3>Claude Code in Action</h3><p class="muted">Anthropic · Abr 2026</p>
-      <div class="row"><a class="btn sm" href="certs/claude-code-in-action.pdf" target="_blank" rel="noopener">Ver PDF</a></div>
+      <h3>Claude Code in Action</h3><p class="muted" data-i18n="cert.cca">Anthropic · Apr 2026</p>
+      <div class="row"><a class="btn sm" href="certs/claude-code-in-action.pdf" target="_blank" rel="noopener" data-i18n="btn.pdf">View PDF</a></div>
     </article>
     <article class="card cert">
       <h3>Claude Code 101</h3><p class="muted">Anthropic</p>
-      <div class="row"><a class="btn sm" href="certs/claude-code-101.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+      <div class="row"><a class="btn sm" href="certs/claude-code-101.jpg" target="_blank" rel="noopener" data-i18n="btn.img">View image</a></div>
     </article>
     <article class="card cert">
       <h3>Claude 101</h3><p class="muted">Anthropic</p>
-      <div class="row"><a class="btn sm" href="certs/claude-101.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+      <div class="row"><a class="btn sm" href="certs/claude-101.jpg" target="_blank" rel="noopener" data-i18n="btn.img">View image</a></div>
     </article>
     <article class="card cert">
       <h3>Claude Platform 101</h3><p class="muted">Anthropic</p>
-      <div class="row"><a class="btn sm" href="certs/claude-platform-101.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+      <div class="row"><a class="btn sm" href="certs/claude-platform-101.jpg" target="_blank" rel="noopener" data-i18n="btn.img">View image</a></div>
     </article>
     <article class="card cert">
       <h3>Introduction to Claude Cowork</h3><p class="muted">Anthropic</p>
-      <div class="row"><a class="btn sm" href="certs/claude-cowork.jpg" target="_blank" rel="noopener">Ver imagen</a></div>
+      <div class="row"><a class="btn sm" href="certs/claude-cowork.jpg" target="_blank" rel="noopener" data-i18n="btn.img">View image</a></div>
     </article>
   </div>
 </section>
 
 <section id="experience" class="section">
-  <h2 class="title"><span>04</span> Experiencia</h2>
+  <h2 class="title" data-i18n="h.exp"><span>04</span> Experience</h2>
   <div class="timeline">
     <article class="card tl">
-      <p class="date">Jun – Nov 2026 · 6 meses</p>
+      <p class="date" data-i18n="exp1.date">Jun – Nov 2026 · 6 months</p>
       <h3>Technical Systems Developer</h3>
       <p class="muted">Hernández y Martins S.A.</p>
       <ul>
-        <li>CCTV en 2 sitios (supermercado + ferretería): 32 cámaras IP, NVR, 99.2% uptime.</li>
-        <li>Segmentación VLAN, cableado Cat 6, IPs estáticas, acceso remoto web/móvil.</li>
-        <li>Enlace de antena inalámbrica entre bodegas y switch principal.</li>
+        <li data-i18n="exp1.a">CCTV at 2 sites (supermarket + hardware store): 32 IP cameras, NVR, 99.2% uptime.</li>
+        <li data-i18n="exp1.b">VLAN segmentation, Cat 6 cabling, static IPs, remote web/mobile access.</li>
+        <li data-i18n="exp1.c">Wireless antenna link between warehouses and the main switch.</li>
       </ul>
     </article>
     <article class="card tl">
-      <p class="date">May – Ago 2025 · 4 meses</p>
+      <p class="date" data-i18n="exp2.date">May – Aug 2025 · 4 months</p>
       <h3>Customer Support Representative</h3>
       <p class="muted">Foundever</p>
       <ul>
-        <li>Soporte técnico Tier 1 en inglés para clientes Verizon.</li>
-        <li>Troubleshooting de dispositivos y conectividad; escalación a Tier 2.</li>
-        <li>Gestión de tickets y activaciones de servicio.</li>
+        <li data-i18n="exp2.a">Tier 1 technical support in English for Verizon customers.</li>
+        <li data-i18n="exp2.b">Device and connectivity troubleshooting; escalation to Tier 2.</li>
+        <li data-i18n="exp2.c">Ticket management and service activations.</li>
       </ul>
     </article>
   </div>
 </section>
 
 <section id="projects" class="section">
-  <h2 class="title"><span>05</span> Proyectos</h2>
+  <h2 class="title" data-i18n="h.proj"><span>05</span> Projects</h2>
   <div class="cert-grid">
     <article class="card proj featured">
       <span class="badge">Security · Go · v0.2.0-dev</span>
       <h3>Nox</h3>
-      <p>Scanner de red en Go de dos etapas: primero encuentra hosts y puertos abiertos rápido, luego identifica qué corre en ellos. Salida en JSON Lines para pipelines, y cada scan se guarda en SQLite para compararlo con el anterior (<code>nox diff</code>).</p>
+      <p data-i18n="nox.p">Two-stage network scanner written in Go: it first finds hosts and open ports fast, then identifies what is running on them. Output is JSON Lines for pipelines, and every scan is stored in SQLite so it can be compared with the previous one (<code>nox diff</code>).</p>
       <ul class="feat">
-        <li>Descubrimiento de hosts, motor SYN sin estado (Linux, root) con cookies HMAC y adaptación de tasa según pérdida, y escáner TCP connect sin privilegios.</li>
-        <li><code>--deep</code>: identifica SSH, HTTP(S)/TLS, SMTP, FTP, MySQL, Redis, SMB, PostgreSQL, RDP, MongoDB y más. Probado contra OpenSSH, nginx, Apache, MariaDB, Redis y Samba reales.</li>
-        <li>Escaneo UDP, perfiles de timing <code>-T 0–5</code> y sistema de plugins (4 integrados de solo lectura, más los propios en cualquier lenguaje) con reglas en JSON.</li>
-        <li>Seguridad por diseño: plugins sin shell, entorno mínimo, límite de tiempo y de salida; banners filtrados a ASCII imprimible.</li>
+        <li data-i18n="nox.a">Host discovery, a stateless SYN engine (Linux, root) with HMAC cookies and loss-based rate adaptation, and an unprivileged TCP connect scanner.</li>
+        <li data-i18n="nox.b"><code>--deep</code>: identifies SSH, HTTP(S)/TLS, SMTP, FTP, MySQL, Redis, SMB, PostgreSQL, RDP, MongoDB and more. Tested against real OpenSSH, nginx, Apache, MariaDB, Redis and Samba.</li>
+        <li data-i18n="nox.c">UDP scanning, <code>-T 0–5</code> timing profiles and a plugin system (4 built-in read-only plugins, plus your own in any language) with JSON rules.</li>
+        <li data-i18n="nox.d">Secure by design: plugins run without a shell, with a minimal environment and time and output limits; banners are filtered to printable ASCII.</li>
       </ul>
       <ul class="tags"><li>Go</li><li>Raw sockets</li><li>SQLite</li><li>JSONL</li><li>Plugins</li></ul>
-      <p class="muted small">Proyecto independiente, en etapa temprana y probado en loopback y software local. Uso solo en sistemas autorizados.</p>
+      <p class="muted small" data-i18n="nox.note">Independent project, at an early stage and tested on loopback and local software. For use on authorized systems only.</p>
     </article>
     <article class="card proj">
-      <span class="badge">GitHub · Público</span>
+      <span class="badge" data-i18n="badge.pub">GitHub · Public</span>
       <h3>thm-writeups</h3>
-      <p>Notas y writeups de TryHackMe (Cyber Security 101): metodología y comandos de John the Ripper, Hydra, Gobuster, EternalBlue y CVE-2024-21413, más cheatsheet de recon, cracking, shells y privesc. Flags omitidas.</p>
+      <p data-i18n="thm.p">TryHackMe notes and writeups (Cyber Security 101): methodology and commands for John the Ripper, Hydra, Gobuster, EternalBlue and CVE-2024-21413, plus a cheatsheet for recon, cracking, shells and privesc. Flags omitted.</p>
       <ul class="tags"><li>TryHackMe</li><li>Writeups</li><li>Metasploit</li></ul>
-      <div class="row"><a class="btn sm" href="https://github.com/fbustamante55/thm-writeups" target="_blank" rel="noopener">Ver repo</a></div>
+      <div class="row"><a class="btn sm" href="https://github.com/fbustamante55/thm-writeups" target="_blank" rel="noopener" data-i18n="btn.repo">View repo</a></div>
     </article>
     <article class="card proj">
-      <span class="badge">GitHub · Público</span>
+      <span class="badge" data-i18n="badge.pub">GitHub · Public</span>
       <h3>OverTheWire-Writeups</h3>
-      <p>Writeups de Natas (niveles 0–15, en progreso): LFI, command injection, SQLi, XOR con key estática y uploads con polyglots, con la vulnerabilidad, la explotación y la corrección.</p>
+      <p data-i18n="otw.p">Natas writeups (levels 0–19, in progress): LFI, command injection, SQLi, XOR with a static key and polyglot uploads, covering the vulnerability, the exploitation and the fix.</p>
       <ul class="tags"><li>OverTheWire</li><li>Web security</li><li>Burp Suite</li></ul>
-      <div class="row"><a class="btn sm" href="https://github.com/fbustamante55/OverTheWire-Writeups" target="_blank" rel="noopener">Ver repo</a></div>
+      <div class="row"><a class="btn sm" href="https://github.com/fbustamante55/OverTheWire-Writeups" target="_blank" rel="noopener" data-i18n="btn.repo">View repo</a></div>
     </article>
     <article class="card proj">
       <span class="badge">Security</span>
       <h3>Mr.Robot</h3>
-      <p>Pentest Copilot local para bug bounty, corriendo con Ollama + Docker.</p>
+      <p data-i18n="robot.p">Local pentest copilot for bug bounty, running on Ollama + Docker.</p>
       <ul class="tags"><li>Ollama</li><li>Docker</li><li>Bug bounty</li></ul>
     </article>
     <article class="card proj">
-      <span class="badge">TCU · Oct 2026 – Presente</span>
-      <h3>Fundación SOLCA — Inventario de uniformes</h3>
-      <p>Proyecto de Trabajo Comunal Universitario (Fidélitas) para la Fundación SOLCA, ligada al Colegio Calasanz. Sistema web de inventario y almacenamiento de uniformes escolares que apoya a familias de la comunidad educativa sin costo para la Fundación.</p>
-      <p class="muted small">Módulos: usuarios y seguridad · inventario · entregas e ingresos · proveedores y pedidos · dashboard de reportes · donaciones · lista de espera y notificaciones a familias.</p>
-      <ul class="tags"><li>Web</li><li>Inventario</li><li>Dashboard</li><li>Servicio comunitario</li></ul>
+      <span class="badge" data-i18n="solca.badge">TCU · Oct 2026 – Present</span>
+      <h3 data-i18n="solca.h">Fundación SOLCA — Uniform inventory</h3>
+      <p data-i18n="solca.p">University community service project (TCU, Fidélitas) for Fundación SOLCA, which is linked to Colegio Calasanz. A web system for school uniform inventory and storage that supports families in the school community at no cost to the foundation.</p>
+      <p class="muted small" data-i18n="solca.mod">Modules: users and security · inventory · deliveries and intake · suppliers and orders · reporting dashboard · donations · waiting list and notifications to families.</p>
+      <ul class="tags"><li>Web</li><li data-i18n="tag.inv">Inventory</li><li>Dashboard</li><li data-i18n="tag.com">Community service</li></ul>
     </article>
     <article class="card proj">
       <span class="badge">Web</span>
       <h3>El Bambú Punta Leona</h3>
-      <p>Rediseño web para Grupo MH.</p>
-      <ul class="tags"><li>Rediseño</li><li>Grupo MH</li></ul>
+      <p data-i18n="bambu.p">Website redesign for Grupo MH.</p>
+      <ul class="tags"><li data-i18n="tag.red">Redesign</li><li>Grupo MH</li></ul>
     </article>
   </div>
 </section>
 
 <section id="education" class="section">
-  <h2 class="title"><span>06</span> Educación</h2>
+  <h2 class="title" data-i18n="h.edu"><span>06</span> Education</h2>
   <div class="grid-2">
     <article class="card">
       <p class="date">2024 – 2027</p>
-      <h3>Bachillerato en Ing. Sistemas de Computación</h3>
+      <h3 data-i18n="edu.deg">Bachelor's in Computer Systems Engineering</h3>
       <p class="muted">Fidélitas · GPA 3.9/4.0</p>
     </article>
     <article class="card">
@@ -304,7 +306,7 @@
 </section>
 
 <section id="contact" class="section">
-  <h2 class="title"><span>08</span> Contacto</h2>
+  <h2 class="title" data-i18n="h.contact"><span>08</span> Contact</h2>
   <div class="card term">
     <div class="term-bar"><i></i><i></i><i></i><span>contact.sh</span></div>
     <p>$ ./connect --target fabian</p>
@@ -314,7 +316,7 @@
       <li><svg class="ic" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg><a href="https://www.linkedin.com/in/fabián-bustamante-aragón-6796142b0/" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.500 14L7 22l5-3 5 3-1.500-8"/></svg><a href="https://www.credly.com/users/fabianbustamante.36bc5c01" target="_blank" rel="noopener">Credly</a></li>
     </ul>
-    <a class="btn btn-primary" href="mailto:fabianbustamantemra@gmail.com">Enviar correo</a>
+    <a class="btn btn-primary" href="mailto:fabianbustamantemra@gmail.com" data-i18n="contact.btn">Send email</a>
   </div>
 </section>
 </main>

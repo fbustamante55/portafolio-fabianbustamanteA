@@ -4,6 +4,95 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
+  /* ---------- i18n: English lives in the HTML, Spanish here ---------- */
+  const ES = {
+    "cert.iotname": "Intro a IoT y Transformación Digital",
+    "cert.pbiname": "Visualización de datos con Power BI",
+    "meta.desc": "Portafolio de Fabián Bustamante Aragón: estudiante de ciberseguridad, jugador de CTF y entusiasta de Red Team. SEC1 Certified. San José, Costa Rica.",
+    "skip": "Saltar al contenido",
+    "menu": "Menú",
+    "nav.exp": "Experiencia",
+    "nav.proj": "Proyectos",
+    "nav.edu": "Educación",
+    "nav.contact": "Contacto",
+    "hero.contact": "Contáctame",
+    "hero.cv": "Ver CV (ES / EN)",
+    "hero.certs": "Certificaciones",
+    "about.p1": "Aspiring offensive security professional con experiencia práctica en pentesting y defensa de redes.",
+    "about.p2": "Hago CTF a diario en <strong>OverTheWire</strong> y <strong>TryHackMe</strong> usando Kali Linux: Nmap, Wireshark, Metasploit, Gobuster y Hashcat.",
+    "about.loc": "Costa Rica o remoto.",
+    "stat.cams": "cámaras IP desplegadas",
+    "stat.uptime": "% uptime del sistema CCTV",
+    "stat.certs": "certificaciones y cursos",
+    "skills.off": "Ofensiva",
+    "skills.net": "Redes · Sistemas · Dev",
+    "skills.netbar": "Redes (CCNA, VLANs)",
+    "skills.note": "Barras = nivel autoevaluado de comodidad práctica.",
+    "skills.ctf": "Plataformas CTF",
+    "h.certs": "<span>03</span> Certificaciones",
+    "certs.intro": "Insignias verificables en <a href=\"https://www.credly.com/users/fabianbustamante.36bc5c01\" target=\"_blank\" rel=\"noopener\">Credly</a>.",
+    "btn.pdf": "Ver PDF",
+    "btn.img": "Ver imagen",
+    "btn.repo": "Ver repo",
+    "cert.ccna": "Cisco · Fidélitas · Dic 2024",
+    "cert.scrum": "Ene 2025",
+    "cert.cca": "Anthropic · Abr 2026",
+    "cert.pbi": "Fidélitas · 24 horas · Mar 2024",
+    "certs.dev": "Desarrollo y datos",
+    "certs.ai": "IA · Anthropic",
+    "h.exp": "<span>04</span> Experiencia",
+    "exp1.date": "Jun – Nov 2026 · 6 meses",
+    "exp1.a": "CCTV en 2 sitios (supermercado + ferretería): 32 cámaras IP, NVR, 99.2% uptime.",
+    "exp1.b": "Segmentación VLAN, cableado Cat 6, IPs estáticas, acceso remoto web/móvil.",
+    "exp1.c": "Enlace de antena inalámbrica entre bodegas y switch principal.",
+    "exp2.date": "May – Ago 2025 · 4 meses",
+    "exp2.a": "Soporte técnico Tier 1 en inglés para clientes Verizon.",
+    "exp2.b": "Troubleshooting de dispositivos y conectividad; escalación a Tier 2.",
+    "exp2.c": "Gestión de tickets y activaciones de servicio.",
+    "h.proj": "<span>05</span> Proyectos",
+    "nox.p": "Scanner de red en Go de dos etapas: primero encuentra hosts y puertos abiertos rápido, luego identifica qué corre en ellos. Salida en JSON Lines para pipelines, y cada scan se guarda en SQLite para compararlo con el anterior (<code>nox diff</code>).",
+    "nox.a": "Descubrimiento de hosts, motor SYN sin estado (Linux, root) con cookies HMAC y adaptación de tasa según pérdida, y escáner TCP connect sin privilegios.",
+    "nox.b": "<code>--deep</code>: identifica SSH, HTTP(S)/TLS, SMTP, FTP, MySQL, Redis, SMB, PostgreSQL, RDP, MongoDB y más. Probado contra OpenSSH, nginx, Apache, MariaDB, Redis y Samba reales.",
+    "nox.c": "Escaneo UDP, perfiles de timing <code>-T 0–5</code> y sistema de plugins (4 integrados de solo lectura, más los propios en cualquier lenguaje) con reglas en JSON.",
+    "nox.d": "Seguridad por diseño: plugins sin shell, entorno mínimo, límite de tiempo y de salida; banners filtrados a ASCII imprimible.",
+    "nox.note": "Proyecto independiente, en etapa temprana y probado en loopback y software local. Uso solo en sistemas autorizados.",
+    "badge.pub": "GitHub · Público",
+    "thm.p": "Notas y writeups de TryHackMe (Cyber Security 101): metodología y comandos de John the Ripper, Hydra, Gobuster, EternalBlue y CVE-2024-21413, más cheatsheet de recon, cracking, shells y privesc. Flags omitidas.",
+    "otw.p": "Writeups de Natas (niveles 0–19, en progreso): LFI, command injection, SQLi, XOR con key estática y uploads con polyglots, con la vulnerabilidad, la explotación y la corrección.",
+    "robot.p": "Pentest Copilot local para bug bounty, corriendo con Ollama + Docker.",
+    "solca.badge": "TCU · Oct 2026 – Presente",
+    "solca.h": "Fundación SOLCA — Inventario de uniformes",
+    "solca.p": "Proyecto de Trabajo Comunal Universitario (Fidélitas) para la Fundación SOLCA, ligada al Colegio Calasanz. Sistema web de inventario y almacenamiento de uniformes escolares que apoya a familias de la comunidad educativa sin costo para la Fundación.",
+    "solca.mod": "Módulos: usuarios y seguridad · inventario · entregas e ingresos · proveedores y pedidos · dashboard de reportes · donaciones · lista de espera y notificaciones a familias.",
+    "tag.inv": "Inventario",
+    "tag.com": "Servicio comunitario",
+    "bambu.p": "Rediseño web para Grupo MH.",
+    "tag.red": "Rediseño",
+    "h.edu": "<span>06</span> Educación",
+    "edu.deg": "Bachillerato en Ing. Sistemas de Computación",
+    "h.contact": "<span>08</span> Contacto",
+    "contact.btn": "Enviar correo"
+  };
+  const EN = {};
+  const i18nEls = $$('[data-i18n]'), i18nAttrEls = $$('[data-i18n-attrs]');
+  const attrPairs = el => el.dataset.i18nAttrs.split(';').map(p => p.split(':'));
+  i18nEls.forEach(el => { EN[el.dataset.i18n] = el.innerHTML; });
+  i18nAttrEls.forEach(el => attrPairs(el).forEach(([attr, key]) => { EN[key] = el.getAttribute(attr); }));
+  const langBtn = $('#lang');
+  function setLang(lang) {
+    const dict = lang === 'es' ? ES : EN;
+    i18nEls.forEach(el => { const v = dict[el.dataset.i18n]; if (v != null) el.innerHTML = v; });
+    i18nAttrEls.forEach(el => attrPairs(el).forEach(([attr, key]) => { if (dict[key] != null) el.setAttribute(attr, dict[key]); }));
+    document.documentElement.lang = lang;
+    langBtn.textContent = lang === 'es' ? 'English' : 'Español';
+    langBtn.lang = lang === 'es' ? 'en' : 'es';
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+  }
+  let lang = 'en';
+  try { if (localStorage.getItem('lang') === 'es') lang = 'es'; } catch (e) {}
+  if (lang === 'es') setLang('es');
+  langBtn.addEventListener('click', () => { lang = lang === 'es' ? 'en' : 'es'; setLang(lang); });
+
   /* ---------- Terminal boot ---------- */
   const boot = $('#boot'), bootText = $('#boot-text');
   const lines = [
@@ -22,16 +111,22 @@
       setTimeout(next, 650);
     })();
     boot.addEventListener('click', endBoot);
+    addEventListener('keydown', endBoot, { once: true });
   }
 
   /* ---------- Matrix rain ---------- */
   const cv = $('#matrix'), ctx = cv.getContext('2d');
   const chars = 'アイウエオカキクケコサシスセソ01{}[]<>/\\$#%&=+*'.split('');
-  const fs = 16; let cols, drops;
+  const fs = 16; let cols, drops, W, H;
   function size() {
-    cv.width = cv.offsetWidth; cv.height = cv.offsetHeight;
-    cols = Math.ceil(cv.width / fs);
-    drops = Array.from({ length: cols }, () => Math.random() * -50);
+    const w = cv.offsetWidth, h = cv.offsetHeight;
+    if (w === W && h === H) return;            // mobile fires resize on scroll: nothing changed
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = w; H = h;
+    cv.width = w * dpr; cv.height = h * dpr;   // sharp on high-density screens
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const n = Math.ceil(w / fs);
+    if (n !== cols) { cols = n; drops = Array.from({ length: cols }, () => Math.random() * -50); }
   }
   size(); addEventListener('resize', size);
   let last = 0;
@@ -40,12 +135,12 @@
     if (t - last < 50 || document.hidden) return;
     last = t;
     ctx.fillStyle = 'rgba(10,10,10,.08)';
-    ctx.fillRect(0, 0, cv.width, cv.height);
+    ctx.fillRect(0, 0, W, H);
     ctx.font = fs + 'px "Share Tech Mono", monospace';
     for (let i = 0; i < cols; i++) {
       ctx.fillStyle = Math.random() > .975 ? '#ff3333' : '#00ff41';
       ctx.fillText(chars[Math.random() * chars.length | 0], i * fs, drops[i] * fs);
-      if (drops[i] * fs > cv.height && Math.random() > .975) drops[i] = 0;
+      if (drops[i] * fs > H && Math.random() > .975) drops[i] = 0;
       drops[i]++;
     }
   }
@@ -106,6 +201,13 @@
   $$('#menu a').forEach(a => a.addEventListener('click', () => {
     menu.classList.remove('open'); burger.setAttribute('aria-expanded', false);
   }));
+  function closeMenu() { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }
+  addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.classList.contains('open')) { closeMenu(); burger.focus(); }
+  });
+  document.addEventListener('click', e => {
+    if (menu.classList.contains('open') && !e.target.closest('.nav')) closeMenu();
+  });
   const links = $$('#menu a');
   const spy = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l.hash === '#' + e.target.id));
