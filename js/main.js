@@ -19,7 +19,9 @@
     "hero.cv": "Ver CV (ES / EN)",
     "hero.certs": "Certificaciones",
     "about.p1": "Aspiring offensive security professional con experiencia práctica en pentesting y defensa de redes.",
-    "about.p2": "Hago CTF a diario en <strong>OverTheWire</strong> y <strong>TryHackMe</strong> usando Kali Linux: Nmap, Wireshark, Metasploit, Gobuster y Hashcat.",
+    "about.p2": "Hago CTF a diario en <strong>OverTheWire</strong> y <strong>TryHackMe</strong> usando Kali Linux: Nmap, Wireshark, Metasploit, Gobuster y Hashcat. Quedé en <strong>1.er lugar de 23 jugadores</strong> en el <strong>CTF Tropical Hunters</strong>.",
+    "stat.ctf": "CTF Tropical Hunters (23 jugadores)",
+    "stat.solves": "retos CTF resueltos · 6950 pts",
     "about.loc": "Costa Rica o remoto.",
     "stat.cams": "cámaras IP desplegadas",
     "stat.uptime": "% uptime del sistema CCTV",
@@ -59,6 +61,14 @@
     "badge.pub": "GitHub · Público",
     "thm.p": "Notas y writeups de TryHackMe (Cyber Security 101): metodología y comandos de John the Ripper, Hydra, Gobuster, EternalBlue y CVE-2024-21413, más cheatsheet de recon, cracking, shells y privesc. Flags omitidas.",
     "otw.p": "Writeups de Natas (niveles 0–19, en progreso): LFI, command injection, SQLi, XOR con key estática y uploads con polyglots, con la vulnerabilidad, la explotación y la corrección.",
+    "th.badge": "CTF · 1.er lugar de 23",
+    "th.p": "Quedé en <strong>1.er lugar de 23 jugadores</strong> en el scoreboard del CTF Tropical Hunters con <strong>6950 puntos y 58 retos resueltos</strong> en Intro, Web, Pwn, Reversing, Crypto, Forensics y Misc. Publiqué writeups de 49 retos con la vulnerabilidad, la explotación y exploits en Python.",
+    "th.a": "<b>Pwn:</b> stack overflow, format string, integer overflow, out-of-bounds, shellcode, double free, use-after-free y TOCTOU.",
+    "th.b": "<b>Reversing:</b> binarios empaquetados (UPX), bytecode de Python compilado (.pyc), strings construidas en la pila y validaciones de licencia.",
+    "th.c": "<b>Crypto:</b> ataques a RSA (primos pequeños, primo compartido, mensaje corto), XOR y Vigenère.",
+    "th.d": "<b>Web · Forensics · Misc:</b> IDOR, análisis de PCAP, desofuscación de PowerShell y esteganografía.",
+    "th.alt": "Scoreboard del CTF Tropical Hunters: Fbustamante55 en 1.er lugar con 6950 puntos y 58 retos",
+    "btn.writeups": "Ver writeups",
     "robot.p": "Pentest Copilot local para bug bounty, corriendo con Ollama + Docker.",
     "solca.badge": "TCU · Oct 2026 – Presente",
     "solca.h": "Fundación SOLCA — Inventario de uniformes",
@@ -147,7 +157,7 @@
   if (!reduce) requestAnimationFrame(rain);
 
   /* ---------- Typing loop ---------- */
-  const words = ['Penetration Tester', 'CTF Player', 'Red Team Enthusiast'];
+  const words = ['Penetration Tester', '#1 Tropical Hunters CTF', 'Red Team Enthusiast'];
   const typed = $('#typed');
   if (reduce) typed.textContent = words[0];
   else {
